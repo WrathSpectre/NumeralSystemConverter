@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.example.wrathspectre.numeralsystemconverter.MainActivity">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="26dp"
+        android:gravity="center"
+        android:hint="Input Value"
+        android:ems="10"
+        android:inputType="numberSigned" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText"
+
+        android:layout_marginTop="65dp">
+
+         <TextView
+             android:id="@+id/textView1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/editText"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="10dp"
+             android:layout_gravity="center"
+             android:text="Input system" />
+
+         <LinearLayout
+             android:id="@+id/linearlayout2"
+             android:orientation="horizontal"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/textView1"
+             android:paddingLeft="20dp"
+             android:paddingRight="20dp"
+             android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/button1"
+                android:text="Bin"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/button2"
+                android:text="Oct"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/button3"
+                android:text="Dec"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/button4"
+                android:text="Hex"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="Output system" />
+
+        <LinearLayout
+            android:id="@+id/linearlayout3"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/button5"
+                android:text="Bin"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/button6"
+                android:text="Oct"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/button7"
+                android:text="Dec"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/button8"
+                android:text="Hex"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:textSize="14dp"
+            android:text="Allow negative values     " />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearlayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:ems="10"
+        android:hint="Output value"
+        android:textSize="26dp"
+        android:gravity="center" />
+
+</RelativeLayout>
